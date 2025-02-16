@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peli reseñas ;)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ajustar el tamaño del carrusel */
+        #carouselExampleIndicators {
+            max-width: 90%;
+            max-height: 250px;
+            margin: 0 auto;
+        }
+    
+        /* Ajustar tamaño de las imágenes */
+        .carousel-inner img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    
+        /* Acercar botones de navegación */
+        .carousel-control-prev, 
+        .carousel-control-next {
+            width: 5%;  /* Más pequeños */
+        }
+    
+        .carousel-control-prev {
+            left: -5%; /* Acercar más al borde izquierdo */
+        }
+    
+        .carousel-control-next {
+            right: -5%; /* Acercar más al borde derecho */
+        }
+    
+        /* Cambiar color de los botones a negro */
+        .carousel-control-prev-icon, 
+        .carousel-control-next-icon {
+            filter: invert(1); /* Hace los iconos negros */
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="container mt-4">
+        <!-- TÍTULO -->
+        <h1 class="text-center mb-4">
+            <span a href="index.html" class="badge bg-secondary">peli reseñas</span>
+        </h1>
+        <!-- CARRUSEL -->
+         <h1>estreno!!</h1>
+<!-- CARRUSEL -->
+<div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="mickey 17.html">
+            <img src="imagenes/Mickey-17.jpg" class="d-block w-100 carousel-link" alt="Promoción 1" data-link="index.html">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="como entrenar a tu dragon.html">
+            <img src="imagenes/como entrenar a tu dragos.jpg" class="d-block w-100 carousel-link" alt="Promoción 2" data-link="index.html">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="capitan america.html">
+            <img src="imagenes/capitan america.jpg" class="d-block w-100 carousel-link" alt="Promoción 3" data-link="index.html">
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Agregar evento de clic a las imágenes del carrusel
+    document.querySelectorAll('.carousel-link').forEach(img => {
+        img.addEventListener('click', function() {
+            window.location.href = this.getAttribute('data-link');
+        });
+    });
+</script>
+        <!-- TARJETAS DE PRODUCTOS -->
+         <h2>peliculas!!</h2>
+        <div class="row mt-4 g-4">
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="imagenes/thor hd.jpg" class="card-img-top" alt="avengers" width="50px">
+                    <div class="card-body">
+                        <h5 class="card-title">avengers end games</h5>
+                        <p class="card-text">Mucho tiempo después de los eventos sucedidos en Avengers: Endgame, los Guardianes de la Galaxia deben convencer a Thor para que regrese al campo de batalla y se enfrente a un villano...</p>
+                        <a href="thor amor y trueno.html" class="btn btn-primary">Ver ahora ;)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="imagenes/guardianes 1.jpg" class="card-img-top" alt="Desarmador">
+                    <div class="card-body">
+                        <h5 class="card-title">guardianes vol.1</h5>
+                        <p class="card-text">Un aventurero espacial se convierte en la presa de unos cazadores de tesoros después de robar el orbe de un villano traicionero. Cuando descubre su poder, debe hallar la forma de unir a unos rivales para salvar al universo.</p>
+                        <a href="guardianes vol1.html" class="btn btn-primary">Ver ahora ;)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="imagenes/guardianes vol 2.jpg" class="card-img-top" alt="Flexómetro">
+                    <div class="card-body">
+                        <h5 class="card-title">guardinaes de la galaxia vol.2</h5>
+                        <p class="card-text">Una poderosa raza alienígena contrata a los Guardianes para que protejan sus valiosas baterías de energía, pero, cuando Rocket las roba, los alienígenas envían a sus tropas de combate a vengarse de los Guardianes. Mientras tratan de escapar con vida, intentan resolver el misterio de los verdaderos orígenes de Peter Quill.</p>
+                        <a href="guardianesv2.html" class="btn btn-primary">Ver ahora ;)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--menu oscuro-->
+<!-- Botón Estrenos y Menú -->
+<div class="d-flex align-items-center position-absolute top-0 end-0 mt-2 me-5">
+    <a href="estrenos page.html" class="btn btn-primary me-3">Estrenos</a>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown"> 
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menú</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" id="toggle-dark-mode">Modo Oscuro</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+  <style>
+    /* Estilos para posicionar el menú en la esquina superior derecha */
+    .top-right-menu {
+        position: absolute;
+        top: 10px;
+        right: 80px;
+    }
+    
+    /* Estilos para modo oscuro */
+    body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+    }
+    .dropdown-menu {
+        background-color: #222 !important;
+    }
+    .dropdown-item {
+        color: #fff !important;
+    }
+    .dropdown-item:hover {
+        background-color: #444 !important;
+    }
+  </style>
+  
+  <script>
+  document.getElementById("toggle-dark-mode").addEventListener("click", function(event) {
+      event.preventDefault(); // Evita el salto de ancla
+      document.body.classList.toggle("dark-mode"); // Alternar la clase en el body
+  });
+  </script>
+  <!--paginacion-->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="page2.html">2</a></li>
+      <li class="page-item">
+        <a class="page-link" href="page2.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
